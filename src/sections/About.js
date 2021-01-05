@@ -151,15 +151,15 @@ var About = () => {
                 </div>
             </div>
             <div ref={TechDiv} style={eventDiv}>
-                <div onClick = {hideTechDiv} style={close}><i style={icon} class="fas fa-arrow-left fa-lg"></i></div>
+                <div onClick = {hideTechDiv} style={close}><i style={icon} className="fas fa-arrow-left fa-lg"></i></div>
                 <TechEvents />
                 </div>
             <div ref={FDPDiv}  style={eventDiv}>
-                <div onClick = {hideFDPDiv} style={close}><i style={icon} class="fas fa-arrow-left fa-lg"></i></div>
+                <div onClick = {hideFDPDiv} style={close}><i style={icon} className="fas fa-arrow-left fa-lg"></i></div>
                 <FDPevents />
             </div>
             <div ref={WorkDiv} style={eventDiv}>
-                <div onClick = {hideWorkDiv} style={close}><i style={icon} class="fas fa-arrow-left fa-lg"></i></div>
+                <div onClick = {hideWorkDiv} style={close}><i style={icon} className="fas fa-arrow-left fa-lg"></i></div>
                 <Workevents />
             </div>
         </div>

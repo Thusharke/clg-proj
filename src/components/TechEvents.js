@@ -109,6 +109,7 @@ var eventsContainer = {
 
 var eventsTitle =   {
     margin : "2vh 0 1vh 0",
+    padding : "0 30px",
     textAlign : "center"
 }
 

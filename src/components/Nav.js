@@ -51,25 +51,24 @@ var  Nav = (props) => {
                 <div style={isTabletOrMobile ? hide : linksDiv}>
                     <ul style={navLinks}>
                     <li  style={linkDiv}>
-                            <Link style={link} to="/news">
+                            <Link className="navLink" style={link} to="/news">
                                 News
                             </Link>
                         </li>
                         <li  style={linkDiv}>
-                            <Link style={link} to="/research">
+                            <Link className="navLink" style={link} to="/research">
                                 Reasearch
                             </Link>
                         </li>
                         <li  style={linkDiv}>
-                            <Link style={link} to="/faculty">
+                            <Link className="navLink" style={link} to="/faculty">
                                 Faculty
                             </Link>
                         </li>
-                        <li style={linkDiv1}>
-                            <Link style={link} to="/infra">
+                        <li style={linkDiv}>
+                            <Link className="navLink" style={link} to="/infra">
                                 Infrastructure
                             </Link>
-                            <div ref={layer} style={blackLayer}></div>
                         </li>
                     </ul>
                 </div>
@@ -80,27 +79,26 @@ var  Nav = (props) => {
                         <div style={line} className="line3"></div>
                     </div>
                     <div className="vLinks" style={vLinks}>
-                        <ul style={navLinks}>
-                        <li  style={linkDiv}>
+                        <ul style={mnavLinks}>
+                        <li  style={mlinkDiv}>
                                 <Link style={link} to="/news">
                                     News
                                 </Link>
                             </li>
-                            <li  style={linkDiv}>
+                            <li  style={mlinkDiv}>
                                 <Link style={link} to="/research">
                                     Reasearch
                                 </Link>
                             </li>
-                            <li  style={linkDiv}>
+                            <li  style={mlinkDiv}>
                                 <Link style={link} to="/faculty">
                                     Faculty
                                 </Link>
                             </li>
-                            <li style={linkDiv1}>
+                            <li style={mlinkDiv}>
                                 <Link style={link} to="/infra">
                                     Infrastructure
                                 </Link>
-                                <div ref={layer} style={blackLayer}></div>
                             </li>
                         </ul>
                     </div>
@@ -130,6 +128,7 @@ var logoDiv = {
 };
 
 var mlogo = {
+    fontSize : "1.7rem",
     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
 };
 var logo = {
@@ -153,29 +152,13 @@ var linkDiv = {
     display : "inline-block",
     overflow : "hidden",
     padding : "4px 8px",
-}
-var linkDiv1 = {
-    position : "relative",
-    display : "inline-block",
-    overflow : "hidden",
-    padding : "4px 8px",
-    border : "1px solid rgb(177 50 39)",
-    borderRadius : "8px"
-}
-var blackLayer = {
-    height : "100%",
-    width : "100%",
-    position : "absolute",
-    left : "0",
-    top : "0",
-    zIndex : "-20",
-    backgroundColor : "rgb(207, 61, 48)"
+    textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)"
 }
 
 var link = {
     fontSize : "1.2rem",
     color : "white",
-    textDecoration : "none"
+    textDecoration : "none",
 };
 
 
@@ -192,8 +175,8 @@ var burger = {
     flexDirection : "column",
     justifyContent : "space-evenly",
     alignItems : "center",
-    width : "40px",
-    height : "40px"
+    width : "30px",
+    height : "30px"
 }
 var line = {
     backgroundColor : "white",
@@ -204,14 +187,29 @@ var line = {
 var vLinks = {
     width : "100%",
     backgroundColor :  "rgba(50, 98, 182,1)",
-    padding : "15vh 0 5vh 0",
+    padding : "10vh 0 0 0",
     position : "absolute",
     top : "0",
     left  : "0",
-    zIndex : "-10000",
+    zIndex : "-1000",
     transform : "translateY(-100%)",
     opacity : "0",
-    transition : "all 0.5s ease-in-out"
+    transition : "all 0.5s ease-in-out",
+}
+var mnavLinks = {
+    width : "100%",
+    listStyle : "none",
+    display : "flex",
+    flexWrap : "wrap",
+    justifyContent : "space-evenly",
+    alignItems : "center",
+};
+var mlinkDiv = {
+    display : "inline-block",
+    padding : "4px 8px",
+    width : "100%",
+    textAlign : "center",
+    borderBottom : "1px solid #ffffff5e"
 }
 
 export default Nav;

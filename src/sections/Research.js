@@ -161,7 +161,7 @@ var navBG = {
     left : "0",
 }
 var resTitle = {
-    fontSize : "40px",
+    fontSize : "35px",
     color : "white",
     width : "95%",
     margin : "18vh auto",
@@ -177,7 +177,7 @@ var resHead = {
     display : "inline-block",
     textDecoration : "none",
     color : "white",
-    width : "30%",
+    width : "32%",
     fontSize : "1rem",
     borderRadius : "8px",
     textAlign : "center",
@@ -203,12 +203,12 @@ var resHeadTitle = {
     fontSize : "1.8rem"
 }
 var mresHeadTitle = {
-    padding : "10px 6px",
+    padding : "5px 1px",
     color : "white",
     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
     backgroundColor : "rgba(0,0,0,0.65)",
     borderRadius : "8px",
-    fontSize : "1.4rem"
+    fontSize : "1.25rem",
 }
 
 var resContent = {

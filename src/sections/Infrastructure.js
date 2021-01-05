@@ -1,37 +1,12 @@
 import React from 'react';
-import Carousel from "react-spring-3d-carousel";
 import img1 from "../imgs/infra1.jpg";
 import img2 from "../imgs/infra2.jpg";
 import img3 from "../imgs/infra3.jpg";
 import img4 from "../imgs/infra4.jpg";
-import { config } from "react-spring";
 import { useMediaQuery } from 'react-responsive'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-var slides = [
-    {
-        key : 1,
-        content : <img src={img1} alt=""/>
-    },
-    {
-        key : 2,
-        content : <img src={img2} alt=""/>
-    },
-    {
-        key : 3,
-        content : <img src={img3} alt=""/>
-    },
-    {
-        key : 4,
-        content : <img src={img4} alt=""/>
-    }
-]
-
-var  state = {
-    goToSlide: 0,
-    offsetRadius: 2,
-    showNavigation: true,
-    config: config.gentle
-};
 
 var Infrastructure = (props) => {
     // window.scrollTo(0,0);
@@ -72,13 +47,20 @@ var Infrastructure = (props) => {
                     </ul>
                 </div>
                 <div style={ isTabletOrMobile ? minfraPics : infraPics}>
-                    <Carousel
-                        slides={slides} 
-                        goToSlide={state.goToSlide}
-                        offsetRadius={state.offsetRadius}
-                        showNavigation={state.showNavigation}
-                        animationConfig={state.config}
-                    />
+                        <Carousel>
+                            <div style={picDiv}>
+                                <img style={pic} src={img3} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img2} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img1} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img4} alt=""/>
+                            </div>
+                        </Carousel>
                 </div>
             </div>
         </div>
@@ -107,15 +89,16 @@ var infraDetails ={
 }
 var minfraDetails ={
     width : "90%",
-    order : "2"
+    order : "2",
+    marginTop : "10vh"
 }
 var infraTitle ={
-    fontSize : "50px",
+    fontSize : "35px",
     margin : "1vh 0 2vh 0",
     fontWeight : "bold"
 }
 var minfraTitle ={
-    fontSize : "40px",
+    fontSize : "35px",
     margin : "1vh 0 2vh 0",
     fontWeight : "bold"
 }
@@ -128,7 +111,7 @@ var infraList = {
     color : "white"
 }
 var infraPics = {
-    width : "60%",
+    width : "50%",
     height : "50vh",
     alignSelf : "start",
     margin : "10vh auto"
@@ -139,5 +122,14 @@ var minfraPics = {
     alignSelf : "start",
     margin : "10vh auto",
     order : "1"
+}
+var picDiv = {
+    width : "100%",
+    height : "100%"
+}
+var pic = {
+    width : "100%",
+    height : "100%",
+    objectFit : "cover"
 }
 export default Infrastructure;

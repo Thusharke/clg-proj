@@ -33,7 +33,7 @@ var FacultyRes = (props) =>{
                                 <h3   style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Publications</h3>
                         </Link>
                         <Link ref={preRef} style={isTabletOrMobile ? mresHead : resHead} onClick={showPre} to={`${url}/presentations`}>
-                                <h3  style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Presentations</h3>
+                                <h3  style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Presntations</h3>
                         </Link>
                         <Link ref={semRef} style={isTabletOrMobile ? mresHead : resHead} onClick={showSem} to={`${url}/seminars`}>
                                 <h3  style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Seminars</h3>
@@ -163,13 +163,14 @@ var resHeadTitle = {
     transitions : "all 1s"
 }
 var mresHeadTitle = {
-padding : "2px",
-color : "white",
-textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
-backgroundColor : "#1e2127",
-borderRadius : "8px",
-fontSize : "1.15rem",
-transitions : "all 1s"
+        padding : "2px",
+        color : "white",
+        textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
+        backgroundColor : "#1e2127",
+        borderRadius : "8px",
+        fontSize : "1.15rem",
+        transitions : "all 1s",
+        fontWeight : "normal"
 }
 
 var resHead = {
@@ -181,7 +182,7 @@ var resHead = {
     borderRadius : "8px",
     textAlign : "center",
     position : "relative",
-    margin : "0 1vw",
+    margin : "0",
     marginTop : "6px",
     backgroundColor : "#282c34",
 }
@@ -189,12 +190,12 @@ var mresHead = {
         display : "inline-block",
         textDecoration : "none",
         color : "white",
-        width : "33%",
+        width : "32.5%",
         fontSize : "1rem",
         borderRadius : "8px",
         textAlign : "center",
         position : "relative",
-        margin : "0 1vw",
+        margin : "0",
         backgroundColor : "#282c34",
     }
 

@@ -12,6 +12,7 @@ var Home = (props) => {
     var text1 = useRef();
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
     useEffect(() =>{
+        window.scrollTo(0,0);
         TweenMax.fromTo(
             loader1.current,
             0.8,
@@ -26,9 +27,9 @@ var Home = (props) => {
         TweenMax.fromTo(
             img.current,
             0.8,
-            {height : "0"},
+            {height : "0%"},
             {height : "100%", ease : Power3.easeInOut}
-        ).delay(0.9);
+        ).delay(1);
         TweenMax.to(
             img.current,
             0.8,
@@ -81,7 +82,7 @@ var Home = (props) => {
 }
 
 var landing = {
-    height : "100vh",
+    minHeight : "100vh",
     width : "100%",
     position : "relative",
     overflow : "hidden"
@@ -106,7 +107,7 @@ var loader = {
 }
 
 var hero = {
-    height : "100%",
+    height : "100vh",
     width  : "100%",
     display : "flex",
     justifyContent : "center",
@@ -132,16 +133,16 @@ var slider = {
 var text = {
     position : "absolute",
     top : "50%",
-    left : "5%",
+    left : "3%",
     color : "white",
     width : "90%"
 }
 var mtext = {
     position : "absolute",
-    top : "60%",
+    top : "55%",
     left : "2%",
     color : "white",
-    width : "90%"
+    width : "100%"
 }
 
 var headLine = {
@@ -156,7 +157,7 @@ var mheadLine = {
     height : "3rem",
     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
     fontFamily : "Oswald",
-    fontSize : "2.7rem",
+    fontSize : "2.2rem",
     position : "relative",
     overflow : "hidden"
 }
@@ -175,18 +176,17 @@ var mhide = {
 }
 
 var info = {
-    width : "60%",
+    width : "50%",
     fontWieght : "200",
     marginLeft : "0.5rem",
     fontSize : "1.2rem",
     marginTop : "1rem"
 }
 var minfo = {
-    width : "100%",
+    width : "90%",
     fontWieght : "200",
     marginLeft : "0.5rem",
     fontSize : "1.1rem",
-    marginTop : "1rem",
     transform : "translateX(-4px)"
 }
 

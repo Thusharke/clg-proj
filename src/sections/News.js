@@ -1,38 +1,12 @@
 import React from 'react';
-import Carousel from "react-spring-3d-carousel";
-import { config } from "react-spring";
 import "../stylesheets/hover.css";
 import img1 from "../imgs/new1.jpg";
 import img2 from "../imgs/new2.jpg";
 import img3 from "../imgs/new3.jpg";
 import img4 from "../imgs/new4.jpg";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import { useMediaQuery } from 'react-responsive';
-
-var slides = [
-    {
-        key : 1,
-        content : <img src={img3} alt=""/>
-    },
-    {
-        key : 2,
-        content : <img src={img2} alt=""/>
-    },
-    {
-        key : 3,
-        content : <img src={img1} alt=""/>
-    },
-    {
-        key : 4,
-        content : <img src={img4} alt=""/>
-    }
-]
-
-var  state = {
-    goToSlide: 0,
-    offsetRadius: 2,
-    showNavigation: true,
-    config: config.gentle
-};
 
 var News = (props) => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
@@ -45,15 +19,22 @@ var News = (props) => {
                     <div style={achiDiv}>
                     <h1 style={aboutTitle}>Achievements</h1>
                         <div style={isTabletOrMobile ? machiPics : achiPics }>
-                            <Carousel
-                                slides={slides} 
-                                goToSlide={state.goToSlide}
-                                offsetRadius={state.offsetRadius}
-                                showNavigation={state.showNavigation}
-                                animationConfig={state.config}
-                            />
+                            <Carousel>
+                            <div style={picDiv}>
+                                <img style={pic} src={img3} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img2} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img1} alt=""/>
+                            </div>
+                            <div style={picDiv}>
+                                <img style={pic} src={img4} alt=""/>
+                            </div>
+                            </Carousel>
                         </div>
-                        <div style={achis}>
+                        <div style={isTabletOrMobile ? machis : achis}>
                             <h3 style={isTabletOrMobile ? machi : achi} className="nlink">CVR Students Shine at Smart India Hackathon 2019</h3>
                             <h3 style={isTabletOrMobile ? machi : achi} className="nlink">CVR Alumni are part of the movies "Antariksham 9000 kmph", "The Ghazi” and "AWE"</h3>
                             <h3 style={isTabletOrMobile ? machi : achi} className="nlink">Director of the college, Prof. K. Ramasastri, awarded the Lifetime Achievement award by ISTE</h3>
@@ -109,7 +90,7 @@ var navBG = {
     left : "0",
 }
 var resTitle = {
-    fontSize : "40px",
+    fontSize : "35px",
     color : "white",
     width : "95%",
     margin : "18vh auto",
@@ -143,7 +124,7 @@ var achiDiv = {
 var achiPics = {
     display : "block",
     height : "60vh",
-    width : "90%",
+    width : "70%",
     margin : "0 auto",
     textAlign : "center"
 }
@@ -153,8 +134,23 @@ var machiPics = {
     width : "90%",
     margin : "0 auto"
 }
+var picDiv = {
+    width : "100%",
+    height : "100%"
+}
+var pic = {
+    width : "100%",
+    height : "100%",
+    objectFit : "cover"
+}
 var achis = {
-    marginTop : "12vh",
+    marginTop : "25vh",
+    color : "#282c34",
+    padding : "0 1vw",
+    textAlign : "center"
+}
+var machis = {
+    marginTop : "18vh",
     color : "#282c34",
     padding : "0 1vw",
     textAlign : "center"

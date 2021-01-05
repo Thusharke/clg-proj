@@ -120,7 +120,7 @@ var navBG = {
     left : "0",
 }
 var facTitle = {
-    fontSize : "40px",
+    fontSize : "35px",
     color : "white",
     width : "95%",
     margin : "18vh auto",

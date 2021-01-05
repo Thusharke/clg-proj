@@ -125,7 +125,7 @@ var mline = {
     overflow : "hidden",
     textShadow: "2px 2px 1px rgba(0, 0, 0, 0.72)",
     pointerEvents : "none",
-    fontSize :"2rem"
+    fontSize :"1.8rem"
 }
 var hide = {
     display : "block",
