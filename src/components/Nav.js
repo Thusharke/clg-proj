@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import gsap,{Power3} from 'gsap';
 import { useMediaQuery } from 'react-responsive'
 import {Link} from 'react-router-dom';
@@ -65,7 +65,7 @@ var  Nav = (props) => {
                                 Faculty
                             </Link>
                         </li>
-                        <li style={linkDiv}>
+                        <li style={linkDiv1}>
                             <Link style={link} to="/infra">
                                 Infrastructure
                             </Link>
@@ -96,7 +96,7 @@ var  Nav = (props) => {
                                     Faculty
                                 </Link>
                             </li>
-                            <li style={linkDiv}>
+                            <li style={linkDiv1}>
                                 <Link style={link} to="/infra">
                                     Infrastructure
                                 </Link>
@@ -153,12 +153,15 @@ var linkDiv = {
     display : "inline-block",
     overflow : "hidden",
     padding : "4px 8px",
-    border : "1px solid rgb(177 50 39)",
-    borderRadius : "8px",
-    overflow : "hidden",
-    position : "relative"
 }
-
+var linkDiv1 = {
+    position : "relative",
+    display : "inline-block",
+    overflow : "hidden",
+    padding : "4px 8px",
+    border : "1px solid rgb(177 50 39)",
+    borderRadius : "8px"
+}
 var blackLayer = {
     height : "100%",
     width : "100%",
