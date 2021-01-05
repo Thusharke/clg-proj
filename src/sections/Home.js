@@ -20,7 +20,7 @@ var Home = (props) => {
         ).delay(0.2);
         TweenMax.to(
             loaderDiv1.current,
-            0.1,
+            0.001,
             {display : "none"}
         ).delay(1);
         TweenMax.fromTo(
@@ -28,7 +28,7 @@ var Home = (props) => {
             0.8,
             {height : "0"},
             {height : "100%", ease : Power3.easeInOut}
-        ).delay(1);
+        ).delay(0.9);
         TweenMax.to(
             img.current,
             0.8,

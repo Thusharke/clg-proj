@@ -10,6 +10,7 @@ body{
 }
 html{
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color:transparent;
 } 
  @media screen and (min-width: 800px){
   ::-webkit-scrollbar {
