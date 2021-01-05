@@ -7,7 +7,7 @@ import Research from "./sections/Research.js";
 import Infrastructure from "./sections/Infrastructure.js";  
 import Faculty from "./sections/Faculty.js";
 import Footer from "./components/Footer.js";
-import {BrowserRouter as Router, Switch, Route, Link} from  'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from  'react-router-dom';
 
 function App() {
   return (

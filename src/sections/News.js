@@ -11,19 +11,19 @@ import { useMediaQuery } from 'react-responsive';
 var slides = [
     {
         key : 1,
-        content : <img src={img3} />
+        content : <img src={img3} alt=""/>
     },
     {
         key : 2,
-        content : <img src={img2} />
+        content : <img src={img2} alt=""/>
     },
     {
         key : 3,
-        content : <img src={img1} />
+        content : <img src={img1} alt=""/>
     },
     {
         key : 4,
-        content : <img src={img4} />
+        content : <img src={img4} alt=""/>
     }
 ]
 

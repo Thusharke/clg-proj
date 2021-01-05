@@ -1,6 +1,5 @@
 import React,{useRef} from "react";
-import gsap,{TweenMax,Power3,ScrollTrigger} from 'gsap';
-import {useIntersection} from 'react-use';
+import gsap,{Power3} from 'gsap';
 import img from "../imgs/WorkShop.jpeg";
 import useHover from './hover.js'
 import { useMediaQuery } from 'react-responsive'
@@ -26,7 +25,7 @@ const Workshop = () =>{
     }
     return(
         <div style={card} className="box">
-            <img ref={imgRef} src={img} style={pic} />
+            <img ref={imgRef} src={img} style={pic} alt="" />
             <div ref={hoverRef} style={cardText}>
                 <h1 style={isTabletOrMobile ? mline : line}><span className="line" style={hide} >Workshops</span></h1>
             </div>
@@ -43,7 +42,6 @@ var card = {
     backgroundColor : "rgba(0,0,0,0.4)",
     position : "relative",
     borderRadius : "8px",
-    width : "100%",
     overflow : "hidden"
 }
 var pic = {

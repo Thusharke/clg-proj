@@ -1,8 +1,6 @@
-import React,{useRef,useEffect} from 'react';
+import React,{useRef} from 'react';
 import {useRouteMatch,Link,Switch,Route} from "react-router-dom";
 import "../stylesheets/table.css";
-import {useIntersection} from 'react-use'
-import gsap,{Power3} from 'gsap';
 import { useMediaQuery } from 'react-responsive'
 
 var FacultyRes = (props) =>{

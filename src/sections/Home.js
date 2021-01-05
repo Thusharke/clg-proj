@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import img1 from '../imgs/students.jpeg';
 import { TweenMax, Power3} from 'gsap';
 import { useMediaQuery } from 'react-responsive'
@@ -59,7 +59,7 @@ var Home = (props) => {
         return (
             <div style={landing} className="landing">
                 <div style={hero} className="hero">
-                            <img ref={img} src={img1} style={pic} className="pic" /> 
+                            <img ref={img} src={img1} style={pic} className="pic" alt="" /> 
                 </div>
                 <div ref={slider1}  style={slider} className="slider"></div>
                 <div style={isTabletOrMobile ? mtext : text} className="text">

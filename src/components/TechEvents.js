@@ -37,7 +37,7 @@ var TechEvents = (props) =>{
             <h1 style={eventsTitle}>Technical Seminars Held</h1>
             <div className="events" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img1}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img1} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Problem Domains for Software Projects</h3>
@@ -49,7 +49,7 @@ var TechEvents = (props) =>{
             </div>
             <div className="events" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img2}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img2} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Machine Learning and Mobile Apps</h3>
@@ -61,7 +61,7 @@ var TechEvents = (props) =>{
             </div>
              <div className="events" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img3}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img3} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Software Designed Data Center</h3>
@@ -73,7 +73,7 @@ var TechEvents = (props) =>{
             </div>
             <div className="events" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img4}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img4} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Wireless Sensor Networks</h3>
@@ -85,7 +85,7 @@ var TechEvents = (props) =>{
             </div>
             <div className="events" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img5}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img5} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Rapid prototyping - 3D technology</h3>

@@ -1,4 +1,4 @@
-import React,{useRef,useEffect} from 'react';
+import React,{useRef} from 'react';
 import facImg from "../imgs/facImg.jpeg";
 import stuImg from "../imgs/stuImg.jpeg";
 import uniImg from "../imgs/uniImg.jpeg";
@@ -38,13 +38,13 @@ var Research = (props) => {
            <h1 style={resTitle}>Research</h1>
            <div style={resHeadDiv}>
                <Link ref={facRef} style={resHead} onClick={showFac} to={`${url}/facultyResearch`}>
-                    <img src={facImg} style={resHeadPic} /><h2 style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Faculty Reasearch</h2>
+                    <img src={facImg} style={resHeadPic}  alt=""/><h2 style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Faculty Reasearch</h2>
                </Link>
                <Link ref={stuRef} className="active" style={resHead} onClick={showStu} to={`${url}/studentResearch`}>
-                    <img src={stuImg} style={resHeadPic} /><h2 style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Student Reasearch</h2>
+                    <img src={stuImg} style={resHeadPic}  alt=""/><h2 style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>Student Reasearch</h2>
                </Link>
                <Link ref={cvrRef} style={resHead} onClick={showCvr} to={`${url}/CVRJournel`}>
-                    <img  src={uniImg} style={resHeadPic}/><h2 className="cvrj"  style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>CVR Journal</h2>
+                    <img  src={uniImg} style={resHeadPic} alt=""/><h2 className="cvrj"  style={isTabletOrMobile ? mresHeadTitle : resHeadTitle}>CVR Journal</h2>
                </Link>
            </div>
            <div style={resContent}>
@@ -138,7 +138,7 @@ var Research = (props) => {
                    <Route exact path = {`${path}/CVRJournel`}>
                         <h1 style={resContentTitle}>CVR Journel</h1>
                         <div style={bookDiv}>
-                            <img src={journelImg} style={cvrjImg} />
+                            <img src={journelImg} style={cvrjImg} alt="" />
                             <a style={{color : "white"}}href="http://cvr.ac.in/home4/Journal/Volume18.pdf">Volume 18, June 2020</a>
                         </div>
                    </Route>
@@ -229,16 +229,6 @@ var resContentTitle = {
     textAlgin : "left",
     margin : "0 auto",
     marginBottom : "2vh"
-}
-
-var resText = {
-    width : "95%",
-    backgroundColor : "rgb(50 98 182)",
-    borderRadius : "9px",
-    padding : "10px",
-    margin : "0 auto",
-    marginBottom : "1vh",
-    color : "white"
 }
 
 var bookDiv = {

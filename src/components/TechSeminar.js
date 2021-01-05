@@ -1,5 +1,5 @@
 import React,{useRef} from "react";
-import gsap,{TweenMax,Power3,ScrollTrigger} from 'gsap';
+import gsap,{Power3} from 'gsap';
 import {useIntersection} from 'react-use';
 import img from "../imgs/techSem.jpeg";
 import useHover from './hover.js';
@@ -65,7 +65,7 @@ const TechSeminar = () =>{
     return(
         <div style={container} ref={divRef} >
             <div style={card} className="box" >
-                <img ref={imgRef} style={pic} src={img} />
+                <img ref={imgRef} style={pic} src={img} alt="" />
                 <div ref={hoverRef} style={cardText}>
                     <h1 style={isTabletOrMobile ? mline : line}><span className="line" style={hide} >Technical</span></h1>
                     <h1 style={isTabletOrMobile ? mline : line}><span className="line" style={hide} >Seminars</span></h1>
@@ -89,7 +89,6 @@ var card = {
     backgroundColor : "rgba(0,0,0,0.4)",
     position : "relative",
     borderRadius : "8px",
-    width : "100%",
     overflow : "hidden"
 }
 var pic = {

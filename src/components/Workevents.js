@@ -37,7 +37,7 @@ var Workevents = (props) =>{
             <h1 style={eventsTitle}>Workshops Held</h1>
             <div className="events2" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img1}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img1} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>One day workshop on "Introduction to Django Framework"</h3>
@@ -49,7 +49,7 @@ var Workevents = (props) =>{
             </div>
             <div className="events2" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img2}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img2} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Two day workshop on "Python Programming"</h3>
@@ -61,7 +61,7 @@ var Workevents = (props) =>{
             </div>
             <div className="events2" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img3}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img3} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>One day workshop on "Advanced Java Scripts Technologies"</h3>
@@ -73,7 +73,7 @@ var Workevents = (props) =>{
             </div>
             <div className="events2" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img4}/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img4} alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Two day workshop on "Public Key Infrastructure"</h3>

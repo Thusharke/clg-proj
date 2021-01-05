@@ -7,7 +7,7 @@ import FDPs from "../components/FDPs.js";
 import Workshop from "../components/Workshop.js";
 import gsap,{Power3} from 'gsap';
 import { useMediaQuery } from 'react-responsive'
-import {HashRouter as Router, Switch, Route, Link,useParams,useRouteMatch} from  'react-router-dom';
+import {useRouteMatch} from  'react-router-dom';
 import TechEvents from '../components/TechEvents.js';
 
 var About = () => {

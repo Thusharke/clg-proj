@@ -1,6 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import gsap,{TweenMax, Power3} from 'gsap';
-import {useWindowScroll} from 'react-use';
+import gsap,{Power3} from 'gsap';
 import { useMediaQuery } from 'react-responsive'
 import {Link} from 'react-router-dom';
 import "../stylesheets/hover.css";
@@ -10,8 +9,7 @@ var  Nav = (props) => {
     var nav = useRef();
     var layer = useRef();
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
-    var [col,setCol] = useState("none");
-    if(props.d != 2.8) del = 0.1;
+    if(props.d !== 2.8) del = 0.1;
     useEffect(() =>{
         gsap.from(
             nav.current,
@@ -67,7 +65,7 @@ var  Nav = (props) => {
                                 Faculty
                             </Link>
                         </li>
-                        <li style={linkDiv,border}>
+                        <li style={linkDiv}>
                             <Link style={link} to="/infra">
                                 Infrastructure
                             </Link>
@@ -98,7 +96,7 @@ var  Nav = (props) => {
                                     Faculty
                                 </Link>
                             </li>
-                            <li style={linkDiv,border}>
+                            <li style={linkDiv}>
                                 <Link style={link} to="/infra">
                                     Infrastructure
                                 </Link>
@@ -153,10 +151,7 @@ var navLinks = {
 var linkDiv = {
     position : "relative",
     display : "inline-block",
-    overflow : "hidden"
-}
-
-var border = {
+    overflow : "hidden",
     padding : "4px 8px",
     border : "1px solid rgb(177 50 39)",
     borderRadius : "8px",

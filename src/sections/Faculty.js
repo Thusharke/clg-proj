@@ -22,7 +22,7 @@ var Faculty = (props) =>{
                 </div>
                 <div style={isTabletOrMobile ? mmFac : mFac }>
                     <img style={pic} src={img2} alt="" />
-                    <div style={p_head}>
+                    <div style={p_head} >
                         <h6 style={mname}>Prof. L.C. Siva Reddy</h6>
                         <h5 style={role}>Prof. &amp; Vice Principal</h5>
                     </div>
