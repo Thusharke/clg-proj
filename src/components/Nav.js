@@ -123,7 +123,7 @@ var navbar  = {
 
 var logoDiv = {
     width : "40%",
-    paddingLeft : "15px",
+    paddingLeft : "18px",
     position : "relative"
 };
 
@@ -167,7 +167,7 @@ var hide = {
 }
 var burgerDiv = {
     textAlign : "right",
-    paddingRight : "18px",
+    paddingRight : "21px",
     cursor : "pointer"
 }
 var burger = {

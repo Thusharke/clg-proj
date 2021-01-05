@@ -27,17 +27,30 @@ var TechEvents = (props) =>{
             ease : Power3.easeOut
         })
     }
+    var open = (el) => {
+        gsap.to(el,{
+            width : "100%",
+            opacity : "1",
+            duration : 1,
+            stagger : {
+                amount : 0.6
+            },
+            delay : 0.8,
+            ease : Power3.easeOut
+        })
+    }
 
 
     if(observer && observer.intersectionRatio > 0.3){
         drag(".events");
+        open(".pic");  
     }
     return(
         <div ref={eventsBox} style={eventsContainer}>
             <h1 style={eventsTitle}>Technical Seminars Held</h1>
             <div className="events" style={tech_card}>
-                <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img1} alt=""/>
+                <div style={isTabletOrMobile ? mimgContainer : imgContainer} >
+                    <img style={isTabletOrMobile ? mpic : pic} src={img1} className="pic" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Problem Domains for Software Projects</h3>
@@ -48,8 +61,8 @@ var TechEvents = (props) =>{
                 </div>
             </div>
             <div className="events" style={tech_card}>
-                <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img2} alt=""/>
+                <div style={isTabletOrMobile ? mimgContainer : imgContainer} >
+                    <img style={isTabletOrMobile ? mpic : pic} src={img2} className="pic" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Machine Learning and Mobile Apps</h3>
@@ -60,8 +73,8 @@ var TechEvents = (props) =>{
                 </div>
             </div>
              <div className="events" style={tech_card}>
-                <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img3} alt=""/>
+                <div style={isTabletOrMobile ? mimgContainer : imgContainer} >
+                    <img style={isTabletOrMobile ? mpic : pic} src={img3} className="pic" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Software Designed Data Center</h3>
@@ -72,8 +85,8 @@ var TechEvents = (props) =>{
                 </div>
             </div>
             <div className="events" style={tech_card}>
-                <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img4} alt=""/>
+                <div style={isTabletOrMobile ? mimgContainer : imgContainer} >
+                    <img style={isTabletOrMobile ? mpic : pic} src={img4} className="pic" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Wireless Sensor Networks</h3>
@@ -84,8 +97,8 @@ var TechEvents = (props) =>{
                 </div>
             </div>
             <div className="events" style={tech_card}>
-                <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img5} alt=""/>
+                <div style={isTabletOrMobile ? mimgContainer : imgContainer} >
+                    <img style={isTabletOrMobile ? mpic : pic} src={img5} className="pic" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Rapid prototyping - 3D technology</h3>
@@ -130,7 +143,7 @@ var mimgContainer = {
     width : "100%"
 }
 var pic = {
-    width : "100%",
+    width : "0%",
     height : "100%",
     borderTopLeftRadius : "10px",
     borderBottomLeftRadius : "10px",

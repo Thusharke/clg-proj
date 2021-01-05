@@ -139,8 +139,8 @@ var text = {
 }
 var mtext = {
     position : "absolute",
-    top : "55%",
-    left : "2%",
+    top : "60%",
+    left : "5%",
     color : "white",
     width : "100%"
 }
@@ -186,7 +186,7 @@ var minfo = {
     width : "90%",
     fontWieght : "200",
     marginLeft : "0.5rem",
-    fontSize : "1.1rem",
+    fontSize : "1rem",
     transform : "translateX(-4px)"
 }
 

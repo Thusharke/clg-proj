@@ -150,7 +150,7 @@ var achis = {
     textAlign : "center"
 }
 var machis = {
-    marginTop : "18vh",
+    marginTop : "16vh",
     color : "#282c34",
     padding : "0 1vw",
     textAlign : "center"

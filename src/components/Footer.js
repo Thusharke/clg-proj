@@ -27,11 +27,12 @@ var footer = {
     alignItems : "center"
 }
 var fline ={
+    
     width : "80%",
     textAlign : "center"
 }
 var contactIcons = {
-    marginTop : "2vh",
+    marginTop : "1vh",
     display: "flex",
     width: "80%",
     justifyContent: "center"

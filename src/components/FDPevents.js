@@ -28,17 +28,30 @@ var FDPevents = (props) =>{
             ease : Power3.easeOut
         })
     }
+    var open = (el) => {
+        gsap.to(el,{
+            width : "100%",
+            opacity : "1",
+            duration : 1,
+            stagger : {
+                amount : 0.6
+            },
+            delay : 0.8,
+            ease : Power3.easeOut
+        })
+    }
 
 
     if(observer && observer.intersectionRatio > 0.3){
         drag(".events1");
+        open(".pic2");
     }
     return(
         <div ref={eventsBox} style={eventsContainer}>
             <h1 style={eventsTitle}>Faculty Development Programmes Held</h1>
             <div className="events1" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img1} alt=""/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img1} className="pic2" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>One week FDP on "Internet of Things and Smart Applications"</h3>
@@ -50,7 +63,7 @@ var FDPevents = (props) =>{
             </div>
             <div className="events1" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img2} alt=""/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img2} className="pic2" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Four day FDP on "Developing Applications using Apple Technologies"</h3>
@@ -62,7 +75,7 @@ var FDPevents = (props) =>{
             </div>
             <div className="events1" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img3} alt=""/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img3} className="pic2" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>One day FDP on "Plickers Educational Tool"</h3>
@@ -74,7 +87,7 @@ var FDPevents = (props) =>{
             </div>
             <div className="events1" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img4} alt=""/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img4} className="pic2" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>Two day FDP on "Technical Writing Skills"</h3>
@@ -86,7 +99,7 @@ var FDPevents = (props) =>{
             </div>
             <div className="events1" style={tech_card}>
                 <div style={isTabletOrMobile ? mimgContainer : imgContainer}>
-                    <img style={isTabletOrMobile ? mpic : pic} src={img5} alt=""/>
+                    <img style={isTabletOrMobile ? mpic : pic} src={img5} className="pic2" alt=""/>
                 </div>
                 <div style={isTabletOrMobile ? mtech_info : tech_info}>
                     <h3 style={eventName}>One week FDP on "Mobile Application Development using Android"</h3>
@@ -130,7 +143,7 @@ var mimgContainer = {
     width : "100%"
 }
 var pic = {
-    width : "100%",
+    width : "0%",
     height : "100%",
     borderTopLeftRadius : "10px",
     borderBottomLeftRadius : "10px",
