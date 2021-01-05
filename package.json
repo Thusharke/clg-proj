@@ -6,9 +6,18 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "gsap": "^3.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.10.0",
+    "react-gsap": "^2.2.1",
+    "react-intersection-observer": "^8.31.0",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-spring": "^8.0.27",
+    "react-spring-3d-carousel": "^1.2.0",
+    "react-use": "^15.3.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
