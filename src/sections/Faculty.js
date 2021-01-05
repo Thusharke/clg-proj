@@ -6,7 +6,7 @@ import img4 from "../imgs/fac4.jpg";
 import { useMediaQuery } from 'react-responsive'
 
 var Faculty = (props) =>{
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
     return (
         <div>

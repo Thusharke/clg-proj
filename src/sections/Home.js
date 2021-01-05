@@ -82,14 +82,14 @@ var Home = (props) => {
 
 var landing = {
     height : "100vh",
-    width : "100vw",
+    width : "100%",
     position : "relative",
-    overflowX : "hidden"
+    overflow : "hidden"
 }
 
 var loaderDiv = {
     height : "100vh",
-    width : "100vw",
+    width : "100%",
     backgroundColor : "#131b21",
     position : "absolute",
     top: "0",

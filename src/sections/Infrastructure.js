@@ -34,7 +34,7 @@ var  state = {
 };
 
 var Infrastructure = (props) => {
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
     return (
         <div>

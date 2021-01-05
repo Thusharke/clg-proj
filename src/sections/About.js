@@ -187,7 +187,7 @@ var icon = {
 
 var aboutPage = {
     color : "black",
-    overflowX : "hidden"
+    overflow : "hidden"
 }
 var aboutTitle = {
     fontFamily : "Oswald",
