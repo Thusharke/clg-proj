@@ -90,7 +90,7 @@ var infraDetails ={
 var minfraDetails ={
     width : "90%",
     order : "2",
-    marginTop : "10vh"
+    marginTop : "4vh"
 }
 var infraTitle ={
     fontSize : "35px",
@@ -118,9 +118,10 @@ var infraPics = {
 }
 var minfraPics = {
     width : "90%",
-    height : "35vh",
+    // height : "35vh",
     alignSelf : "start",
     margin : "10vh auto",
+    marginBottom : "0",
     order : "1"
 }
 var picDiv = {

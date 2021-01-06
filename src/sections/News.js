@@ -130,7 +130,7 @@ var achiPics = {
 }
 var machiPics = {
     display : "block",
-    height : "40vh",
+    // height : "40vh",
     width : "90%",
     margin : "0 auto"
 }
@@ -150,7 +150,7 @@ var achis = {
     textAlign : "center"
 }
 var machis = {
-    marginTop : "16vh",
+    marginTop : "4vh",
     color : "#282c34",
     padding : "0 1vw",
     textAlign : "center"
